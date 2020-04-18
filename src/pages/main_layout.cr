@@ -9,7 +9,7 @@ abstract class MainLayout
   # Add a `page_title` method to pages to override it. You can also remove
   # This method so every page is required to have its own page title.
   def page_title
-    "Welcome"
+    "Software Developer, Musician, Creator"
   end
 
   def render
@@ -19,8 +19,10 @@ abstract class MainLayout
       mount Shared::LayoutHead.new(page_title: page_title, context: context)
 
       body do
+        mount Shared::Navigation.new
         mount Shared::FlashMessages.new(context.flash)
         content
+        mount Shared::Footer.new
       end
     end
   end
