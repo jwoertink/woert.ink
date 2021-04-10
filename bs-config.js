@@ -6,7 +6,7 @@
  |
  */
 
-module.exports = {
+ module.exports = {
   snippetOptions: {
     rule: {
       match: /<\/head>/i,

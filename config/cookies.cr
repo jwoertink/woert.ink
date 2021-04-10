@@ -12,6 +12,8 @@ Lucky::CookieJar.configure do |settings|
     # By default, don't allow reading cookies with JavaScript
     cookie.http_only(true)
 
+    cookie.samesite(:lax)
+
     # You can set other defaults for cookies here. For example:
     #
     #    cookie.expires(1.year.from_now).domain("mydomain.com")

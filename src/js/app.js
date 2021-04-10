@@ -8,6 +8,7 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 
 import jQuery from "jquery";
+require('jquery.easing')(jQuery);
 
 (function($) {
   "use strict"; // Start of use strict

@@ -16,13 +16,13 @@ abstract class MainLayout
     html_doctype
 
     html lang: "en" do
-      mount Shared::LayoutHead.new(page_title: page_title, context: context)
+      mount Shared::LayoutHead, page_title: page_title, context: context
 
       body do
-        mount Shared::Navigation.new
-        mount Shared::FlashMessages.new(context.flash)
+        mount Shared::Navigation
+        mount Shared::FlashMessages, context.flash
         content
-        mount Shared::Footer.new
+        mount Shared::Footer
       end
     end
   end

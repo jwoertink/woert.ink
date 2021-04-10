@@ -32,7 +32,7 @@ class Shared::Footer < BaseComponent
     end
     section class: "copyright py-4 text-center text-white" do
       div class: "container" do
-        small "Copyright © Jeremy Woertink #{Time.utc.year}"
+        small %("Copyright" © Jeremy Woertink #{Time.utc.year})
       end
     end
   end
